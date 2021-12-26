@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<style>
+    @font-face {
+        font-family: "Raleway";
+        src: url("./fonts/Raleway-ExtraBold.eot");
+        src: url("./fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"),
+        url("./fonts/Raleway-ExtraBold.woff2") format("woff2"),
+        url("./fonts/Raleway-ExtraBold.woff") format("woff"),
+        url("./fonts/Raleway-ExtraBold.ttf") format("truetype"),
+        url("./fonts/Raleway-ExtraBold.svg#Raleway-ExtraBold") format("svg");
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Raleway";
+        src: url("./fonts/Raleway-ExtraLight.eot");
+        src: url("./fonts/Raleway-ExtraLight.eot?#iefix") format("embedded-opentype"),
+        url("./fonts/Raleway-ExtraLight.woff2") format("woff2"),
+        url("./fonts/Raleway-ExtraLight.woff") format("woff"),
+        url("./fonts/Raleway-ExtraLight.ttf") format("truetype"),
+        url("./fonts/Raleway-ExtraLight.svg#Raleway-ExtraLight") format("svg");
+        font-weight: 200;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Raleway";
+        src: url("./fonts/Raleway-Bold.eot");
+        src: url("./fonts/Raleway-Bold.eot?#iefix") format("embedded-opentype"),
+        url("./fonts/Raleway-Bold.woff2") format("woff2"),
+        url("./fonts/Raleway-Bold.woff") format("woff"),
+        url("./fonts/Raleway-Bold.ttf") format("truetype"),
+        url("./fonts/Raleway-Bold.svg#Raleway-Bold") format("svg");
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Raleway";
+        src: url("./fonts/Raleway-Black.eot");
+        src: url("./fonts/Raleway-Black.eot?#iefix") format("embedded-opentype"),
+        url("./fonts/Raleway-Black.woff2") format("woff2"),
+        url("./fonts/Raleway-Black.woff") format("woff"),
+        url("./fonts/Raleway-Black.ttf") format("truetype"),
+        url("./fonts/Raleway-Black.svg#Raleway-Black") format("svg");
+        font-weight: 900;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Raleway";
+        src: url("./fonts/Raleway-Light.eot");
+        src: url("./fonts/Raleway-Light.eot?#iefix") format("embedded-opentype"),
+        url("./fonts/Raleway-Light.woff2") format("woff2"),
+        url("./fonts/Raleway-Light.woff") format("woff"),
+        url("./fonts/Raleway-Light.ttf") format("truetype"),
+        url("./fonts/Raleway-Light.svg#Raleway-Light") format("svg");
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Raleway";
+        src: url("./fonts/Raleway-Medium.eot");
+        src: url("./fonts/Raleway-Medium.eot?#iefix") format("embedded-opentype"),
+        url("./fonts/Raleway-Medium.woff2") format("woff2"),
+        url("./fonts/Raleway-Medium.woff") format("woff"),
+        url("./fonts/Raleway-Medium.ttf") format("truetype"),
+        url("./fonts/Raleway-Medium.svg#Raleway-Medium") format("svg");
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Raleway";
+        src: url("./fonts/Raleway-Regular.eot");
+        src: url("./fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"),
+        url("./fonts/Raleway-Regular.woff2") format("woff2"),
+        url("./fonts/Raleway-Regular.woff") format("woff"),
+        url("./fonts/Raleway-Regular.ttf") format("truetype"),
+        url("./fonts/Raleway-Regular.svg#Raleway-Regular") format("svg");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Raleway";
+        src: url("./fonts/Raleway-SemiBold.eot");
+        src: url("./fonts/Raleway-SemiBold.eot?#iefix") format("embedded-opentype"),
+        url("./fonts/Raleway-SemiBold.woff2") format("woff2"),
+        url("./fonts/Raleway-SemiBold.woff") format("woff"),
+        url("./fonts/Raleway-SemiBold.ttf") format("truetype"),
+        url("./fonts/Raleway-SemiBold.svg#Raleway-SemiBold") format("svg");
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Raleway";
+        src: url("./fonts/Raleway-Thin.eot");
+        src: url("./fonts/Raleway-Thin.eot?#iefix") format("embedded-opentype"),
+        url("./fonts/Raleway-Thin.woff2") format("woff2"),
+        url("./fonts/Raleway-Thin.woff") format("woff"),
+        url("./fonts/Raleway-Thin.ttf") format("truetype"),
+        url("./fonts/Raleway-Thin.svg#Raleway-Thin") format("svg");
+        font-weight: 100;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    html {
+        font-family: "Raleway", sans-serif;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+
+    .head_t {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 140%;
+        color: #000000;
+    }
+
+    .text_02 {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 140%;
+        text-align: center;
+        color: #000000;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .text_tin {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 140%;
+        color: #000000;
+    }
+
+    .text_3 {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 140%;
+    }
+
+    .title {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 45px;
+        line-height: 140%;
+        color: #000000;
+    }
+
+    .p_list {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 140%;
+        color: #000000;
+
+    }
+
+    .p_list span {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 34px;
+        line-height: 140%;
+        color: #000000;
+    }
+
+    .p_bold {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 140%;
+        /* or 48px */
+
+
+        color: #000000;
+    }
+
+    .tin_text {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 34px;
+        line-height: 140%;
+    }
+
+    ul {
+        margin: 0;
+        padding-left: 50px;
+    }
+
+    li {
+        margin: 0;
+    }
+
+    .footer {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 140%;
+        text-align: center;
+        color: #000000;
+    }
+</style>
+
+<table width="1654" style="margin: auto; padding: 30px">
+    <thead>
+    <tr>
+        <th width="20%"></th>
+        <th width="60%"></th>
+        <th width="20%"></th>
+
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <th colspan="1"><img style="float: left" width="100" src="./logo.svg" alt=""></th>
+        <th colspan="1" style="vertical-align: bottom"><p class="head_t" style="margin: 0 10px">МИНИСТЕРСТВО ПРИРОДНЫХ
+            РЕСУРСОВ <br> И
+            ЭКОЛОГИИ РОССИЙСКОЙ ФЕДЕРАЦИИ</p></th>
+        <th colspan="1"></th>
+    </tr>
+
+    <tr style="height: 50px"></tr>
+
+    <tr>
+        <th colspan="3"><p class="text_02">ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ</p></th>
+    </tr>
+
+    <tr>
+        <th colspan="3"><p class="text_02">«Лапландский государственный природный биосферный заповедник»</p></th>
+    </tr>
+
+    <tr style="height: 20px"></tr>
+
+    <tr>
+        <th colspan="3"><p class="text_tin">184506, Россия, Мурманская область, город Мончегорск, пер. Зелёный, дом
+            8</p></th>
+    </tr>
+
+    <tr>
+        <th colspan="3"><p class="text_tin">+7 (815-36) 5-80-18 lapland@laplandzap.ru</p></th>
+    </tr>
+
+    <tr>
+        <th colspan="3">
+            <p class="text_tin"> ИНН: 5107010339</p>
+        </th>
+    </tr>
+
+    <tr style="height: 100px"></tr>
+
+    <tr>
+        <th colspan="3" class="text_3">Электронный билет на экскурсию</th>
+    </tr>
+
+    <tr>
+        <th colspan="3" class="text_3"> Серия ЭБ № 001012 от 20.10.21</th>
+    </tr>
+
+    <tr style="height: 100px"></tr>
+
+    <tr>
+        <th colspan="3" class="title">ВЗРОСЛЫЙ</th>
+    </tr>
+
+    <tr style="height: 100px"></tr>
+
+    <tr>
+        <th colspan="3" align="left"><p class="p_list">Место проведения экскурсии:<span>Чунозерская усадьба Лапландского заповедника</span>
+        </p></th>
+    </tr>
+
+    <tr>
+        <th colspan="3" align="left"><p class="p_list">Дата и время экскурсии:<span> 25 октября 2021 года в 12:00 </span>
+        </p></th>
+    </tr>
+
+    <tr>
+        <th colspan="3" align="left"><p class="p_list">Название экскурсии: <span>  «Восхождение на гору Ельнюн-2»</span>
+        </p></th>
+    </tr>
+
+    <tr>
+        <th colspan="3" align="left"><p class="p_list">Возрастные ограничения экскурсии: <span>0+</span></p></th>
+    </tr>
+    <tr style="height: 45px"></tr>
+    <tr>
+        <th colspan="3" align="left"><p class="p_list">Стоимость посещения: <span>0 руб. 00 коп.</span></p></th>
+    </tr>
+
+    <tr>
+        <th colspan="3" align="left"><p class="p_list">Категория льготы: <span>многодетная семья </span></p></th>
+    </tr>
+    <tr style="height: 45px"></tr>
+    <tr>
+        <th colspan="3" align="left"><p class="p_list">ФИО оформлявшего заказ: <span> Иванова Мария Алексеевна</span>
+        </p></th>
+    </tr>
+
+    <tr>
+        <th colspan="3" align="left"><p class="p_list">Телефон: <span>+7 (999) 999-99-99</span></p></th>
+    </tr>
+    <tr>
+        <th colspan="3" align="left"><p class="p_list">E-mail: <span>ivanova@mail.ru</span></p></th>
+    </tr>
+
+
+    <tr style="height: 110px"></tr>
+
+    <tr>
+        <th colspan="3" align="left"><p class="p_bold"> На территории заповедника запрещено: </p></th>
+    </tr>
+
+    <tr>
+        <th colspan="3" align="left">
+            <ul>
+                <li class="tin_text">Курение, нахождение в нетрезвом состоянии и распитие спиртных напитков.</li>
+            </ul>
+        </th>
+
+    </tr>
+
+    <tr>
+        <th colspan="3" align="left">
+            <ul>
+                <li class="tin_text"> Наличие и использование взрывчатых и легковоспламеняющихся веществ и предметов.
+                </li>
+            </ul>
+        </th>
+    </tr>
+
+    <tr>
+        <th colspan="3" align="left">
+            <ul>
+                <li class="tin_text">Разведение огня.</li>
+            </ul>
+        </th>
+    </tr>
+
+    <tr>
+        <th colspan="3" align="left">
+            <ul>
+                <li class="tin_text">Купание в водоемах.</li>
+            </ul>
+        </th>
+    </tr>
+
+    <tr style="height: 112px"></tr>
+
+    <tr>
+        <th colspan="3">
+            <p class="footer">
+                Утверждён приказом Министерства культуры
+            </p>
+        </th>
+    </tr>
+    <tr>
+        <th colspan="3">
+            <p class="footer">
+                Российской федерации от 29 июня 2020 г. № 702
+            </p>
+        </th>
+    </tr>
+
+    </tbody>
+</table>
+
+</body>
+</html>
